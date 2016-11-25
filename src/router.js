@@ -14,6 +14,7 @@ const Tab = resolve => require(['./pages/Tab/Tab.vue'], resolve)
 const UserProfile = { template: '<h2>UserProfile</h2>' }
 const UserPosts = { template: '<h2>UserPosts</h2>' }
 const Mall = resolve => require(['./pages/mall/index/Index.vue'], resolve)
+const App = resolve => require(['./App.vue'], resolve)
 
 
 
@@ -25,20 +26,26 @@ const router = new VueRouter({
   mode: 'history',
   base: __dirname,
   routes: [
-    { path: '/', component: Home },
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar },
-    { path: '/tab', component: Tab, 
-        children: [
-	        {
-	          path: 'profile',
-	          component: UserProfile
-	        },
-	        {
-	          path: 'posts',
-	          component: UserPosts
-	        }
-	    ]
+    {
+      path: '/',
+      component: App,
+      children: [
+        { path: '/', component: Home },
+        { path: '/foo', component: Foo },
+        { path: '/bar', component: Bar },
+        { path: '/tab', component: Tab, 
+            children: [
+              {
+                path: 'profile',
+                component: UserProfile
+              },
+              {
+                path: 'posts',
+                component: UserPosts
+              }
+          ]
+        }
+      ]
     },{
       path: '/mall', 
       component: Mall,

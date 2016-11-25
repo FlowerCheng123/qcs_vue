@@ -13,7 +13,6 @@
 	// import router from '../../router'
 	import { mapGetters, mapActions } from 'vuex'
 	import Home from './components/Home.vue'
-
 	export default {
 		components: { Home },
 		computed: mapGetters({
@@ -29,6 +28,12 @@
 		},
 		created (){
 			this.$store.dispatch( 'getProducts' )
+		},
+		watch: {
+		    '$route': 'getProducts'
+		},
+		beforeRouteEnter(to, from, next){
+			next();
 		}
 	}
 </script>

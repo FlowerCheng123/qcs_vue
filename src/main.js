@@ -17,6 +17,6 @@ new Vue({
     router,
     store,
     el: '#app',
-    template: '<App/>',
+    template: '<router-view class="view"></router-view>',
     components: { App }
 })
