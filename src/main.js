@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import router from './router'
-import App from './App.vue'
+import router from './router/'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import store from './store'
+import './lib/js/font-size'
 import './lib/style/weui.css'
 import './style/layout.less'
 
@@ -18,5 +18,4 @@ new Vue({
     store,
     el: '#app',
     template: '<router-view class="view"></router-view>',
-    components: { App }
 })

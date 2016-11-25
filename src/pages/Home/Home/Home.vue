@@ -10,7 +10,6 @@
     </div>
 </template>
 <script>
-	// import router from '../../router'
 	import { mapGetters, mapActions } from 'vuex'
 	import Home from './components/Home.vue'
 	export default {

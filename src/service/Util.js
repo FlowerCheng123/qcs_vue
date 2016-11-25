@@ -8,7 +8,7 @@ export default {
     isObject: input => (typeof input === 'object') && !(input instanceof Array),
 
     isEmptyObj:  input => {
-        var isEmpty = true;
+        let isEmpty = true;
         Object.keys( input ).forEach( key =>{
           isEmpty = false;
         }) 

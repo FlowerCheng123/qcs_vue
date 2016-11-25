@@ -10,19 +10,19 @@
               </div>
               <div class="weui-tabbar">
                   <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
-                      <img src="./assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                      <img src="../../assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
                       <p class="weui-tabbar__label"><router-link to="/">微信</router-link></p>
                   </a>
                   <a href="javascript:;" class="weui-tabbar__item">
-                      <img src="./assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                      <img src="../../assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
                       <p class="weui-tabbar__label"><router-link to="/foo">通讯录</router-link></p>
                   </a>
                   <a href="javascript:;" class="weui-tabbar__item">
-                      <img src="./assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                      <img src="../../assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
                       <p class="weui-tabbar__label"><router-link to="/bar">发现</router-link></p>
                   </a>
                   <a href="javascript:;" class="weui-tabbar__item">
-                      <img src="./assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                      <img src="../../assets/icon_tabbar.png" alt="" class="weui-tabbar__icon">
                       <p class="weui-tabbar__label"><router-link to="/tab">我</router-link></p>
                   </a>
               </div>
